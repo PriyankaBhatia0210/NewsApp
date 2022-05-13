@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react'
+import Navbar from './Components/Navbar';
+import NewsComponent from './Components/NewsComponent';
+import NewsItem from './Components/NewsItem';
+
+export class App extends Component {
+  myStyle = {
+    backgroundColor: '#ced4da'
+  }
+  render() {
+    return (
+      <div style={this.myStyle}>
+        <Navbar/>
+        <NewsComponent pageSize={'20'} country={'in'}/>
+        
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
