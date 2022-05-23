@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Spinner extends Component {
-  imageUrl = "https://media.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif"
-  render() {
-    return (
-      <div className='text-center'>
-        <img src={this.imageUrl} alt="loading" />
-      </div>
-    )
-  }
+const Spinner = ()=> {
+  let loading = 'https://raw.githubusercontent.com/CodeWithHarry/NewsMonkey-React/master/src/components/loading.gif'
+        return (
+            <div className="text-center">
+                <img className="my-3" src={loading} alt="loading" />
+            </div>
+        )
 }
 
 export default Spinner
