@@ -29,14 +29,14 @@ const App = () => {
       />
         <Navbar/>
         <Routes>
-        <Route exact path="/home" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = "business" pageSize={20} country={'in'} categories={'business'} sourceColor = {'primary'}/>} />
-        <Route exact path="/business" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = "business" pageSize={20} country={'in'} categories={'business'} sourceColor = {'primary'}/>} />
-        <Route exact path="/entertainment" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = 'entertainment' pageSize={20} country={'in'} categories={'entertainment'} sourceColor = {'secondary'}/>} />
-        <Route exact path="/general" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = 'general' pageSize={20} country={'in'} categories={'general'} sourceColor = {'success'}/>} />
-        <Route exact path="/health" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='health' pageSize={20} country={'in'} categories={'health'} sourceColor = {'danger'} />} />
-        <Route exact path="/science" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='science' pageSize={20} country={'in'} categories={'science'} sourceColor = {'warning'}/>} />
-        <Route exact path="/sports" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='sports' pageSize={20} country={'in'} categories={'sports'} sourceColor = {'info'}/>} />
-        <Route exact path="/technology" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='technology' pageSize={20} country={'in'} categories={'technology'} sourceColor = {'dark'}/>} />              
+        <Route exact path="/newsapp" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = "business" pageSize={20} country={'in'} categories={'business'} sourceColor = {'primary'}/>} />
+        <Route exact path="/newsapp/business" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = "business" pageSize={20} country={'in'} categories={'business'} sourceColor = {'primary'}/>} />
+        <Route exact path="/newsapp/entertainment" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = 'entertainment' pageSize={20} country={'in'} categories={'entertainment'} sourceColor = {'secondary'}/>} />
+        <Route exact path="/newsapp/general" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key = 'general' pageSize={20} country={'in'} categories={'general'} sourceColor = {'success'}/>} />
+        <Route exact path="/newsapp/health" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='health' pageSize={20} country={'in'} categories={'health'} sourceColor = {'danger'} />} />
+        <Route exact path="/newsapp/science" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='science' pageSize={20} country={'in'} categories={'science'} sourceColor = {'warning'}/>} />
+        <Route exact path="/newsapp/sports" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='sports' pageSize={20} country={'in'} categories={'sports'} sourceColor = {'info'}/>} />
+        <Route exact path="/newsapp/technology" element = {<NewsComponent setProgress = {setProgress} apiKey={apiKey}  key='technology' pageSize={20} country={'in'} categories={'technology'} sourceColor = {'dark'}/>} />              
         </Routes>
         
       </div>
